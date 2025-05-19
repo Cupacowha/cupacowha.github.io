@@ -1,0 +1,67 @@
+
+#nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    
+
+   
+}
+
+#primero{
+
+    display: flex;
+    flex: 60%;
+    
+}
+#segundo{
+
+    display: flex;
+    flex: 40;
+    
+    
+}
+
+
+
+#nav li{
+    list-style-type: none;
+    margin: 8px;
+    padding: 8px;
+}
+
+
+#nav ul{
+    list-style-type: none;
+    padding: 0; 
+    display: none;
+    top: 30px;
+}
+
+#nav li:hover{
+    position: relative;
+    background-color: #6c6260;
+}
+
+#nav li:hover ul{
+    display: block;
+    position: absolute;
+    background-color: black;
+}
+
+
+
+#lg , #nosotros{
+    font-size: 20px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+
+
+
+
