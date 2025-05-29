@@ -1,7 +1,7 @@
 let carrito = [];
 
-function agregarAlCarrito(nombre, precio, imagen) {
-    const producto = { nombre, precio, imagen };
+function agregarAlCarrito(nombre, precio) {
+    const producto = { nombre, precio };
     carrito.push(producto);
     mostrarResumenCarrito();
 }
@@ -14,10 +14,7 @@ function mostrarResumenCarrito() {
     let total = 0;
     carrito.forEach(item => {
         const li = document.createElement("li");
-        li.innerHTML = `
-            <img src="${item.imagen}" alt="${item.nombre}" style="width:50px; height:auto; margin-right:10px;">
-            ${item.nombre} - $${item.precio.toLocaleString("es-CO")}
-        `;
+        li.textContent = `${item.nombre} - $${item.precio.toLocaleString("es-CO")}`;
         lista.appendChild(li);
         total += item.precio;
     });
@@ -25,11 +22,16 @@ function mostrarResumenCarrito() {
     totalTexto.innerHTML = `<strong>Total:</strong> $${total.toLocaleString("es-CO")}`;
 }
 
+// Mostrar/ocultar carrito al hacer clic en el botón
 document.addEventListener("DOMContentLoaded", () => {
     const btnCarrito = document.getElementById("btn-carrito");
     const carritoContenido = document.getElementById("carrito-contenido");
 
     btnCarrito.addEventListener("click", () => {
-        carritoContenido.style.display = carritoContenido.style.display === "none" ? "block" : "none";
+        if (carritoContenido.style.display === "none") {
+            carritoContenido.style.display = "block";
+        } else {
+            carritoContenido.style.display = "none";
+        }
     });
 });
