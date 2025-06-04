@@ -1,5 +1,24 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 80px; /* depende de la altura de tu header */
+}
+
 #icono {
   display: none;
+}
+
+#menupequeño {
+  list-style: none;
+  padding: 1px;
+  display: flex;
+  margin: auto;
 }
 
 #menu,
@@ -58,22 +77,6 @@
   top: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-  #icono {
-    display: block;
-    font-size: 40px;
-    margin: 2%;
-  }
-
-  #menu {
-    display: none;
-  }
-
-  #hrs {
-    display: none;
-  }
-}
-
 /*---------------------------------------------------------------------------------------------------------------*/
 
 #mujer,
@@ -87,6 +90,12 @@
   width: 50%;
   height: auto;
   margin: 1%;
+}
+
+#hombre > .producto {
+  background-color: #3a959f;
+  color: white;
+  z-index: 2;
 }
 
 .producto {
@@ -108,14 +117,66 @@
   color: white;
   z-index: 2;
 }
+
 .producto:hover .FimgU {
-  transform: scale(1.5);
+  transform: scale(1.1);
 
   transition: transform 1s;
 }
 
-#hombre > .producto {
-  background-color: #3a959f;
-  color: white;
-  z-index: 2;
+#hombre > .producto:hover {
+  background-color: #4a7f87; /* o cualquier color que prefieras */
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+  #icono {
+    display: block;
+    font-size: 40px;
+    margin: 2%;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #hrs {
+    display: none;
+  }
+
+  #hombre,
+  #mujer {
+    flex-direction: column;
+    align-items: center; /* para que se centren horizontalmente */
+  }
+
+  .producto {
+    width: 80%; /* o 100% si prefieres que ocupen todo el ancho */
+    margin: 10% 0; /* margen vertical para separar los productos */
+  }
+
+  header #menu {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 38px;
+  }
+
+  header #menu li {
+    margin: 10px 0;
+    z-index: 2;
+    padding: 4%;
+  }
+
+  #primero,
+  #tercero {
+    flex-direction: column;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #segundo {
+    display: none; /* Ocultar el segundo menú en pantallas pequeñas */
+  }
 }

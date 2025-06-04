@@ -1,5 +1,15 @@
-addEventListener("click", e => {
-    console.log("Click event triggered " + e.target);
-    
-     // document.getElementById("nav").style.backgroundColor = "red";
+let mostrarMenu = false;
+
+document.addEventListener("click", (e) => {
+  const menu = document.getElementById("menu");
+
+  if (e.target.id === "icono") {
+    mostrarMenu = !mostrarMenu;
+
+    if (mostrarMenu) {
+      menu.style.display = "flex";
+    } else {
+      menu.style.display = "none";
+    }
+  }
 });
