@@ -25,6 +25,7 @@ function ocultarMenu() {
 }
 
 window.addEventListener("scroll", () => {
+  alert("Scroll detectado");
   if (mostrarMenu && screen.width <= 768) {
     // Si el ancho de la pantalla es mayor a 768px y el menú está visible, ocultarlo
     ocultarMenu();
