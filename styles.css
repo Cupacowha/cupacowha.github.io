@@ -12,6 +12,7 @@ body {
 
 #icono {
   display: none;
+  z-index: 1001;
 }
 
 #menupequeño {
@@ -125,7 +126,7 @@ body {
 }
 
 #hombre > .producto:hover {
-  background-color: #4a7f87; /* o cualquier color que prefieras */
+  background-color: #4a7f87;
 }
 
 /*---------------------------------------------------------------------------------------------------------------*/
@@ -135,6 +136,7 @@ body {
     display: block;
     font-size: 40px;
     margin: 2%;
+    z-index: 10010;
   }
 
   #menu {
@@ -152,7 +154,7 @@ body {
   }
 
   .producto {
-    width: 80%; /* o 100% si prefieres que ocupen todo el ancho */
+    width: 80%;
     margin: 10% 0; /* margen vertical para separar los productos */
   }
 
@@ -178,5 +180,17 @@ body {
 
   #segundo {
     display: none; /* Ocultar el segundo menú en pantallas pequeñas */
+  }
+
+  #menu li:hover {
+    position: relative;
+    background-color: #6c6260;
+  }
+
+  #menu li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: black;
+    top: 100%;
   }
 }
