@@ -8,6 +8,7 @@ document.addEventListener("click", (e) => {
     if (mostrarMenu) {
       document.getElementById("menu").style.display = "flex";
       document.getElementById("productos").style.paddingTop = "230px";
+      document.getElementById("segundoi").style.display = "none";
     }
   }
 
@@ -20,6 +21,7 @@ function ocultarMenu() {
   mostrarMenu = false;
   document.getElementById("menu").style.display = "none";
   document.getElementById("productos").style.paddingTop = "0px";
+  document.getElementById("segundoi").style.display = "flex";
 }
 
 window.addEventListener("scroll", () => {
