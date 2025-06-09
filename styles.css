@@ -6,8 +6,8 @@ header {
   z-index: 1000;
 }
 
-body {
-  padding-top: 80px; /* depende de la altura de tu header */
+html {
+  scroll-padding-top: 0px; /* Para anclas (#id) */
 }
 
 #icono {
