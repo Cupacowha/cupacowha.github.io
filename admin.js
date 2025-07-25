@@ -1,5 +1,5 @@
 const url =
-  "https://script.google.com/macros/s/AKfycbwo6-e7SqisygUIP_pbt2mur5qPu-6XXG1tLLyrv4zFl3zw-Nn2q8hGTg66IOl0bZk0/exec";
+  "https://script.google.com/macros/s/AKfycbxYxaYXdickXIPwTjIk_Z8uAjqEOFe9UAdvNfyWz148wZGRBPsxduFymOXG6J3fOD75/exec";
 
 addEventListener("click", (e) => {
   if (e.target.type === "submit") {
