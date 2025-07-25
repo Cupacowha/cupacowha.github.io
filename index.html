@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intentos</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="funciones.js"></script>
+    <script src="script.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -33,11 +33,11 @@
     <header id="menugrande">
       <ul id="menu">
         <div id="primero">
-          <li>TENIS</li>
+          <li onclick="window.location.href='#localtenis'">TENIS</li>
           <li onclick="window.location.href='#localhombre'">HOMBRE</li>
           <li onclick="window.location.href='#productos'">MUJER</li>
-          <li>HOGAR</li>
-          <li>ACCESORIOS</li>
+          <li onclick="window.location.href='#localhogar'">HOGAR</li>
+          <li onclick="window.location.href='#localaccesorios'">ACCESORIOS</li>
         </div>
 
         <div id="segundo">
@@ -51,6 +51,27 @@
         </div>
       </ul>
     </header>
+
+    <div id="hrs">
+      <hr style="border: 0cap" />
+      <hr style="border: 0cap" />
+      <hr style="border: 0cap" />
+    </div>
+    <div id="hrs">
+      <hr style="border: 0cap" />
+      <hr style="border: 0cap" />
+      <hr style="border: 0cap" />
+    </div>
+    <div id="hrs">
+      <hr style="border: 0cap" />
+      <hr style="border: 0cap" />
+      <hr style="border: 0cap" />
+    </div>
+    <div id="hrs">
+      <hr style="border: 0cap" />
+      <hr style="border: 0cap" />
+      <hr style="border: 0cap" />
+    </div>
 
     <section id="productos">
       <h2>
@@ -205,6 +226,7 @@
         </div>
 
         <div id="blusablanca" class="producto">
+          <div id="localtenis"></div>
           <img src="recursos/uno.jpeg" alt="Camisa Roja Totto" class="FimgU" />
           <h3>blusa blanca LOOKS</h3>
           <p>$50.000</p>
@@ -215,7 +237,171 @@
       </div>
 
       <h2>
-        HOMBRE
+        TENIS
+        <hr />
+      </h2>
+
+      <div id="hombre">
+        <div id="blusablanca" class="producto">
+          <img src="recursos/uno.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <img src="recursos/dos.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <img src="recursos/tres.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <img src="recursos/uno.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+
+      <div id="hombre">
+        <div id="blusablanca" class="producto">
+          <img src="recursos/uno.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <img src="recursos/dos.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <img src="recursos/tres.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <div id="localhogar"></div>
+          <img src="recursos/uno.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+
+      <h2>
+        HOGAR
+        <hr />
+      </h2>
+
+      <div id="hombre">
+        <div id="blusablanca" class="producto">
+          <img src="recursos/uno.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <img src="recursos/dos.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <img src="recursos/tres.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <img src="recursos/uno.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+
+      <div id="hombre">
+        <div id="blusablanca" class="producto">
+          <img src="recursos/uno.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <img src="recursos/dos.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <img src="recursos/tres.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+
+        <div id="blusablanca" class="producto">
+          <div id="localaccesorios"></div>
+          <img src="recursos/uno.jpeg" alt="Camisa Roja Totto" class="FimgU" />
+          <h3>blusa blanca LOOKS</h3>
+          <p>$50.000</p>
+          <button onclick="agregarAlCarrito('Camisa Roja Totto', 50000)">
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+
+      <h2>
+        ACCESORIOS
         <hr />
       </h2>
 
