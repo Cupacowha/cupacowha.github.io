@@ -26,7 +26,7 @@ addEventListener("click", (e) => {
     document.getElementById(id).style.backgroundColor = "lightblue";
     document.getElementsByTagName("fieldset")[0].style.display = "block";
     const opciones = document.getElementsByClassName("opcionesMenu");
-    alert(id);
+
     mostrarOpciones(opciones, id);
 
     switch (id) {
@@ -177,11 +177,11 @@ function eliminarProducto(codigo) {
     .then((response) => response.json())
     .then((data) => {
       for (let i = 0; i < data.length; i++) {
-        console.log("Código recibido:", codigo);
-        console.log("Código en la hoja:", data[i]["Codigo Producto"]);
         if (data[i]["Codigo Producto"] === codigo) {
           alert("Producto eliminado correctamente");
           x;
+        } else {
+          alert("No se encontró el producto con el código proporcionado");
         }
       }
     })
