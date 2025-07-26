@@ -1,5 +1,5 @@
 const url =
-  "https://script.google.com/macros/s/AKfycbxYxaYXdickXIPwTjIk_Z8uAjqEOFe9UAdvNfyWz148wZGRBPsxduFymOXG6J3fOD75/exec";
+  "https://script.google.com/macros/s/AKfycby0W2bk5KgePE1W_AK7FkAbMoEgJFJvjcmx5PMM9Axj9e5LZRgxhpHB7LTqsSj7UVQ3/exec";
 
 addEventListener("click", (e) => {
   if (e.target.type === "submit") {
@@ -9,12 +9,25 @@ addEventListener("click", (e) => {
 
     fetch(url, {
       method: "POST",
-      body: JSON.stringify({ action: "registrar" }), // sin datos
+      body: JSON.stringify({
+        action: "registrar",
+        datos: {
+          // aquí estaba "dato", debía ser "datos"
+          nombre: user,
+          password: contrasena,
+        },
+      }),
     })
-      .then((res) => res.json())
+      .then((res) => res.text())
       .then((data) => {
-        console.log("👀 Usuarios en el sheet:", data);
-        alert("Hay " + data.length + " usuarios registrados.");
+        if (data === "ok") {
+          alert("Usuario registrado correctamente");
+          localStorage.setItem("inicio", "true");
+          window.location.href = "panel.html";
+        } else {
+          alert("Error al registrar el usuario ");
+          location.reload();
+        }
       });
   }
 });
